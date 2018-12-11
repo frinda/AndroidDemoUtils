@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btn_base"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="基本使用"
+            android:onClick="@{clickListener}"/>
+
+        <Button
+            android:id="@+id/btn_event_handler"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="事件处理"
+            android:onClick="@{clickListener}"/>
+
+        <Button
+            android:id="@+id/btn_double_binging"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="双向绑定"
+            android:onClick="@{clickListener}"/>
+        <Button
+            android:id="@+id/btn_observe"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="动态更新"
+            android:onClick="@{clickListener}"/>
+        <Button
+            android:id="@+id/btn_detail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="布局详情"
+            android:onClick="@{clickListener}"/>
+        <Button
+            android:id="@+id/btn_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="RecyclerView"
+            android:onClick="@{clickListener}"/>
+
+        <Button
+            android:id="@+id/btn_multi_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="MultiRecyclerView"
+            android:onClick="@{clickListener}"/>
+
+        <Button
+            android:id="@+id/btn_customer_attribute"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="自定义属性"
+            android:onClick="@{clickListener}"/>
+        <Button
+            android:id="@+id/btn_view_stub"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="viewStub"
+            android:onClick="@{clickListener}"/>
+    </LinearLayout>
+
+</layout>

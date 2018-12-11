@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="task"
+            type="com.axon.databingingdemo.Task" />
+
+        <variable
+            name="handler"
+            type="com.axon.databingingdemo.EventHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事件处理1"
+            android:onClick="@{handler::onClickFriend}"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="事件处理2"
+            android:onClick="@{() -> handler.onTaskClick(task)}"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="事件处理3"
+            android:onClick="@{(theView) -> handler.onTaskClick(theView,task)}"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="事件处理4"
+            android:onClick="@{() -> handler.onCompletedChanged(task,true)}"/>
+    </LinearLayout>
+</layout>
