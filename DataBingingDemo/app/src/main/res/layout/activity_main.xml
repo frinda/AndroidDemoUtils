@@ -78,7 +78,7 @@
             android:text="ViewModel"
             android:onClick="@{clickListener}"/>
         <Button
-            android:id="@+id/btn_liveData"
+            android:id="@+id/btn_livedata"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="LiveD"

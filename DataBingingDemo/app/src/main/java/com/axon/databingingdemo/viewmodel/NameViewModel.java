@@ -16,7 +16,7 @@ public class NameViewModel extends ViewModel {
     public MutableLiveData<String> getmCurrentName() {
 
         if (mCurrentName == null) {
-            mCurrentName = new MutableLiveData<String>();
+            mCurrentName = new MutableLiveData<>();
         }
         return mCurrentName;
     }
