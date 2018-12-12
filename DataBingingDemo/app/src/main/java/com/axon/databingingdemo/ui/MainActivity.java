@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this,CustomAttributeActivity.class));
                 }else if(v.getId() == R.id.btn_view_stub) {
                     startActivity(new Intent(MainActivity.this,ViewStubActivity.class));
+                }else if(v.getId() == R.id.btn_viewmodel) {
+                    startActivity(new Intent(MainActivity.this,ViewModelActivity.class));
+                }else if(v.getId() == R.id.btn_livedata) {
+                    startActivity(new Intent(MainActivity.this,NameActivity.class));
                 }
             }
         });

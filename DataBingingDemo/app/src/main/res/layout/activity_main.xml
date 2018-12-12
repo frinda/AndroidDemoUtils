@@ -71,6 +71,19 @@
             android:layout_height="40dp"
             android:text="viewStub"
             android:onClick="@{clickListener}"/>
+        <Button
+            android:id="@+id/btn_viewmodel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="ViewModel"
+            android:onClick="@{clickListener}"/>
+        <Button
+            android:id="@+id/btn_liveData"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="LiveD"
+            android:onClick="@{clickListener}"/>
+
     </LinearLayout>
 
 </layout>

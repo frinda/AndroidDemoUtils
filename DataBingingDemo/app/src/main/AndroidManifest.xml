@@ -29,6 +29,8 @@
         <activity android:name=".ui.MultiRecyclerViewActivity" />
         <activity android:name=".ui.CustomAttributeActivity"/>
         <activity android:name=".ui.ViewStubActivity" />
+        <activity android:name=".ui.ViewModelActivity" />
+        <activity android:name=".ui.NameActivity" />
     </application>
 
 </manifest>
