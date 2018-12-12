@@ -9,13 +9,9 @@
 /captures
 .externalNativeBuild
 /.gradle/
-/.idea/
 /app/build/
-/app/libs/
-/gradle/
 /app/src/test/
 /app/app.iml
 /app/src/androidTest/
 /gradlew
-/DataBingingDemo.iml
 /gradlew.bat
