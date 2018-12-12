@@ -1,4 +1,4 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.adapter;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
@@ -7,6 +7,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.axon.databingingdemo.BR;
+import com.axon.databingingdemo.R;
+import com.axon.databingingdemo.bean.RecyclerViewItem;
 
 import java.util.List;
 

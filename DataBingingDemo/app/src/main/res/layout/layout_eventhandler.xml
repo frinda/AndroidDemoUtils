@@ -5,11 +5,11 @@
         <import type="android.view.View" />
         <variable
             name="task"
-            type="com.axon.databingingdemo.Task" />
+            type="com.axon.databingingdemo.task.Task" />
 
         <variable
             name="handler"
-            type="com.axon.databingingdemo.EventHandler" />
+            type="com.axon.databingingdemo.handler.EventHandler" />
     </data>
 
     <LinearLayout

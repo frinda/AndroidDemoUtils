@@ -1,4 +1,4 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.ui;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.axon.databingingdemo.R;
 import com.axon.databingingdemo.databinding.ActivityMainBindingImpl;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityMainBindingImpl binging = DataBindingUtil.setContentView(this,R.layout.activity_main);
+        ActivityMainBindingImpl binging = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         binging.setClickListener(new View.OnClickListener() {
             @Override

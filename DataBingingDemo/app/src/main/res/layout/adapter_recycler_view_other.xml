@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="com.axon.databingingdemo.RecyclerViewItem" />
+            type="com.axon.databingingdemo.bean.RecyclerViewItem" />
     </data>
 
     <RelativeLayout

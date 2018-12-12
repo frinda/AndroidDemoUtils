@@ -1,4 +1,4 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.axon.databingingdemo.R;
+import com.axon.databingingdemo.bean.User;
 import com.axon.databingingdemo.databinding.ActivityBaseUserBindingImpl;
 
 /**
@@ -20,7 +22,7 @@ public class BaseUserActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        final ActivityBaseUserBindingImpl binging = DataBindingUtil.setContentView(this,R.layout.activity_base_user);
+        final ActivityBaseUserBindingImpl binging = DataBindingUtil.setContentView(this, R.layout.activity_base_user);
 
         final User user = new User("容华", "谢后");
         binging.setUser(user);

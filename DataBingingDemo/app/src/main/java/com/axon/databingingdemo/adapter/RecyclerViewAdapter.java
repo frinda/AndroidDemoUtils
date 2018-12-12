@@ -1,4 +1,4 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.adapter;
 
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.axon.databingingdemo.BR;
+import com.axon.databingingdemo.R;
+import com.axon.databingingdemo.bean.RecyclerViewItem;
 import com.axon.databingingdemo.databinding.RecyclerViewItemBinding;
 
 import java.util.List;
@@ -28,7 +31,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @NonNull
     @Override
     public BindingHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        RecyclerViewItemBinding binging = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()),R.layout.recycler_view_item,parent,false);
+        RecyclerViewItemBinding binging = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.recycler_view_item,parent,false);
         BindingHolder bingHolder = new BindingHolder(binging.getRoot());
         bingHolder.setBinding(binging);
         return bingHolder;

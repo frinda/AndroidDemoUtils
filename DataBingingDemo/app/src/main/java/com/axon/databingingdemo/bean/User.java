@@ -1,4 +1,4 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.bean;
 
 /**
  * <p>描述：</p>

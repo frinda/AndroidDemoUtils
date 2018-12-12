@@ -1,10 +1,12 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.axon.databingingdemo.R;
+import com.axon.databingingdemo.bean.ObservableObjectsUser;
 import com.axon.databingingdemo.databinding.ActivityDoubleBingingBinding;
 
 /**
@@ -19,7 +21,7 @@ public class DoubleBindingActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityDoubleBingingBinding activityDoubleBingingBinding =  DataBindingUtil.setContentView(this,R.layout.activity_double_binging);
+        ActivityDoubleBingingBinding activityDoubleBingingBinding =  DataBindingUtil.setContentView(this, R.layout.activity_double_binging);
         activityDoubleBingingBinding.setUser(new ObservableObjectsUser());
     }
 }

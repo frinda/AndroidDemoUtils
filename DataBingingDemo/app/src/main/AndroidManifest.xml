@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,15 +20,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".EventHanderActivity" />
-        <activity android:name=".BaseUserActivity" />
-        <activity android:name=".DoubleBindingActivity" />
-        <activity android:name=".ObservableActivity" />
-        <activity android:name=".LayoutDetailActivity" />
-        <activity android:name=".RecyclerViewActivity" />
-        <activity android:name=".MultiRecyclerViewActivity" />
-        <activity android:name=".CustomAttributeActivity"/>
-        <activity android:name=".ViewStubActivity" />
+        <activity android:name=".ui.EventHanderActivity" />
+        <activity android:name=".ui.BaseUserActivity" />
+        <activity android:name=".ui.DoubleBindingActivity" />
+        <activity android:name=".ui.ObservableActivity" />
+        <activity android:name=".ui.LayoutDetailActivity" />
+        <activity android:name=".ui.RecyclerViewActivity" />
+        <activity android:name=".ui.MultiRecyclerViewActivity" />
+        <activity android:name=".ui.CustomAttributeActivity"/>
+        <activity android:name=".ui.ViewStubActivity" />
     </application>
 
 </manifest>

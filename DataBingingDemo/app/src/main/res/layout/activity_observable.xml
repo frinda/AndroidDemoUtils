@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
+        <variable
+            name="user"
+            type="com.axon.databingingdemo.bean.ObservableObjectsUser" />
         <!--<variable-->
             <!--name="user"-->
-            <!--type="com.axon.databingingdemo.ObservableObjectsUser" />-->
-        <!--<variable-->
-            <!--name="user"-->
-            <!--type="com.axon.databingingdemo.ObservableFieldsUser" />-->
-        <import type="android.databinding.ObservableArrayMap"/>
-        <variable name="user" type="ObservableArrayMap&lt;String, String&gt;" />
+            <!--type="com.axon.databingingdemo.bean.ObservableFieldsUser" />-->
+        <!--<import type="android.databinding.ObservableArrayMap"/>-->
+        <!--<variable name="user" type="ObservableArrayMap&lt;String, String&gt;" />-->
         <variable
             name="clickListener"
             type="android.view.View.OnClickListener" />
@@ -20,24 +20,24 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@{user.firstName}" />-->
-
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@{user.lastName}" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user[`firstName`]}" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{user[`lastName`]}" />
+            android:text="@{user.lastName}" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{user[`firstName`]}" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{user[`lastName`]}" />-->
 
         <Button
             android:layout_width="wrap_content"

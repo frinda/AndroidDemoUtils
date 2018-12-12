@@ -1,4 +1,4 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 
+import com.axon.databingingdemo.adapter.MultiRecyclerViewAdapter;
+import com.axon.databingingdemo.R;
+import com.axon.databingingdemo.bean.RecyclerViewItem;
 import com.axon.databingingdemo.databinding.ActivityRecyclerViewBinding;
 
 import java.util.ArrayList;
@@ -28,7 +31,7 @@ public class MultiRecyclerViewActivity extends AppCompatActivity {
 
         initData();
 
-        ActivityRecyclerViewBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_recycler_view);
+        ActivityRecyclerViewBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_recycler_view);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
         MultiRecyclerViewAdapter recyclerViewAdapter = new MultiRecyclerViewAdapter(list);
         binding.recyclerView.setAdapter(recyclerViewAdapter);

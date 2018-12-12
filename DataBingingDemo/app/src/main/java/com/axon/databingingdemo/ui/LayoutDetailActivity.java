@@ -1,10 +1,12 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.axon.databingingdemo.R;
+import com.axon.databingingdemo.bean.User;
 import com.axon.databingingdemo.databinding.ActivityDetailBinding;
 
 import java.util.ArrayList;
@@ -22,7 +24,7 @@ public class LayoutDetailActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityDetailBinding bing = DataBindingUtil.setContentView(this,R.layout.activity_detail);
+        ActivityDetailBinding bing = DataBindingUtil.setContentView(this, R.layout.activity_detail);
 
         User user = new User("ronghua", "xiehou");
         bing.setUser(user);

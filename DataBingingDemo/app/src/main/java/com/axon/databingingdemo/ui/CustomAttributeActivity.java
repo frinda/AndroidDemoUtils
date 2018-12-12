@@ -1,10 +1,11 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.axon.databingingdemo.R;
 import com.axon.databingingdemo.databinding.ActivityCustomerAttributeBinding;
 
 /**
@@ -18,7 +19,7 @@ public class CustomAttributeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityCustomerAttributeBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_customer_attribute);
+        ActivityCustomerAttributeBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_customer_attribute);
 
         binding.setUrl("http://i7.qhmsg.com/t01b48a6f15bf0cf5c1.jpg");
     }

@@ -1,7 +1,9 @@
-package com.axon.databingingdemo;
+package com.axon.databingingdemo.bean;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+
+import com.axon.databingingdemo.BR;
 
 /**
  * <p>描述：</p>
